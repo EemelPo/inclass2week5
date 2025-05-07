@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         SONARQUBE_SERVER = 'SonarQubeServer'  // The name of the SonarQube server configured in Jenkins
-        SONAR_TOKEN = 'sqa_115d9a631c0aab79febb0f73a1a923bac370cc9a' // Store the token securely
+        SONAR_TOKEN = 'sqa_12c9fa65a251bc12365eda51ddcd474d136962ea' // Store the token securely
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'amirdirin/sep2_week5'
+        DOCKERHUB_REPO = 'eemelpo/inclass2week5'
         DOCKER_IMAGE_TAG = 'latest'
 
 
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ADirin/sep2_week5_inclass_s2.git'
+                git branch: 'master', url: 'https://github.com/EemelPo/inclass2week5.git'
             }
         }
 
